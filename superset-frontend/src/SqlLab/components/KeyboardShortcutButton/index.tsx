@@ -49,7 +49,7 @@ export const KEY_MAP = {
   [KeyboardShortcut.CtrlE]: userOS !== 'MacOS' ? t('Stop query') : undefined,
   [KeyboardShortcut.CtrlQ]: userOS === 'Windows' ? t('New tab') : undefined,
   [KeyboardShortcut.CtrlT]: userOS !== 'Windows' ? t('New tab') : undefined,
-  [KeyboardShortcut.CtrlP]: t('Previous Line'),
+  [KeyboardShortcut.CtrlP]: userOS === 'MacOS' ? t('Previous Line') : undefined,
   [KeyboardShortcut.CtrlShiftF]: t('Format SQL'),
   // default ace editor shortcuts
   [KeyboardShortcut.CmdF]: userOS === 'MacOS' ? t('Find') : undefined,
